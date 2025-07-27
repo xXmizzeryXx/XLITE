@@ -1,55 +1,71 @@
-# XLITE
+# XLITE v0.1 - Open Beta
 
-**XLITE** is a lightweight, browser-based desktop environment designed to provide a familiar OS-like experience within your browser. It includes a range of built-in tools to meet all your unblocking needs.
-> **Note:** XLITE is for educational and productivity purposes. Use responsibly.
+Welcome to **XLITE**, a futuristic, fast, and minimal operating system-style proxy launcher. Built entirely in **HTML, CSS, and JavaScript**, XLITE delivers a full OS-like experience right in your browser — no backend required.
 
----
-
-## Features
-
-- **Fully Functional UI:**
-  - Start Menu, Taskbar, Desktop Icons
-  - Draggable, resizable windows with minimize/maximize
-- **Built-in Tools:**
-  - 📁 File Explorer – manage in-memory files
-  - 📝 Notepad – create and save text files
-  - 🌐 Browser – access iframe-compatible websites
-  - ⚙️ Settings – toggle dark mode, set username, and more
-  - 🎮 Games - play games on xlite, with no interruptions.
-- **Time Display:** Live system clock in the taskbar
-.
+> **A Vision Production** | Powered by **Elusion x VPLAZA**
 
 ---
 
-## Usage
+## 🌟 Features
 
-1. **Open `index.html`** in any modern web browser.
-2. Use desktop icons or the Start Menu to launch apps.
-3. Toggle dark mode via **Settings**.
-4. Save files in Notepad and access them through File Explorer.
-5. Use Browser to visit unblocked sites.
-
----
-
-## Project Structure
-
-- `index.html` – Main UI layout
-- `styles.css` – Visual styling for desktop and apps
-- `script.js` – Logic for app management, UI, and cloaking
-- `images/`, `icons/` – Visual assets
-- `games/` - All HTML games included in XLITE
+- 🗂️ **File Explorer** — View and interact with files (virtual filesystem).
+- 📝 **Notepad** — Write and save notes directly in the OS UI.
+- 🌐 **Browser** — Browse sites via iframe with URL input.
+- 🎮 **Games App** — Launch HTML5 games from a local `/games/` folder.
+- ⚙️ **Settings** — Toggle dark mode, adjust volume, and enable `about:blank` cloaking.
+- 💻 **Window Management** — Drag, minimize, maximize, and close apps like a real OS.
+- 🕓 **Taskbar & Start Menu** — Functional UI with real-time clock, start menu, and taskbar icons.
+- 👥 **Credits** — View contributors and special thanks.
 
 ---
 
-## Credits
+## 📁 File Structure
 
-- Developed by: **Elusion x VPLAZA**
+root/
+│
+├── index.html # Main XLITE desktop
+├── games.html # Games App UI
+├── /games/ # Your HTML5 games go here
+├── /icons/ # App icons (folder.png, settings.png, etc.)
+├── /images/ # XLITE logos and assets
+├── script.js # Core OS logic
+├── styles.css # UI styling
+├── README.md # This file
 
 ---
 
-## Disclaimer
+## 🚀 Getting Started
 
-XLITE is intended for educational use only. Use it in accordance with your institution's policies.
+1. **Deploy on Vercel, Netlify, or GitHub Pages** — no server needed.
+2. Upload your HTML5 games to the `/games/` folder.
+3. Use the **Games App** to launch them inside XLITE.
+4. Optionally enable **about:blank** cloaking in **Settings** for stealth usage.
 
 ---
 
+## ⚠️ Known Issues
+
+- Some websites (e.g., Google) block iframe loading.
+- about:blank cloaking is not working ATM.
+- No real file system persistence (notes and files are in-memory only).
+- Social media and proxy integration (working on iframe only for beta) not yet available — coming soon.
+
+---
+
+## 👥 Credits
+
+- **Lead Dev**: Vision Productions  
+- **Design & Vision**: @ho0ks and xXmizzeryXx 
+- **Collaboration**: Elusion x VPLAZA  
+- Special thanks to testers and open-source contributors.
+
+---
+
+## License
+
+**XLITE v0.1** is released for educational and development purposes only.  
+Use responsibly and respect school/organization policies.
+
+---
+
+*Version: 0.1 Beta — July 2025*
