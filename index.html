@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XLITE - A Vision Production</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Startup Screen -->
+  <div id="startup-screen">
+    <img id="logo" src="images/vplaza.PNG" alt="XLITE Logo" />
+    <div id="loading-text">Starting XLITE...</div>
+  </div>
+
+  <!-- Desktop -->
+  <div id="desktop">
+    <div class="icon" onclick="openApp('explorer')">
+      <img src="icons/folder.png" alt="File Explorer" />
+      <span>File Explorer</span>
+    </div>
+    <div class="icon" onclick="openApp('settings')">
+      <img src="icons/settings.png" alt="Settings" />
+      <span>Settings</span>
+    </div>
+    <div class="icon" onclick="openApp('notepad')">
+      <img src="icons/notepad.png" alt="Notepad" />
+      <span>Notepad</span>
+    </div>
+    <div class="icon" onclick="openApp('browser')">
+      <img src="icons/browser.png" alt="Browser" />
+      <span>Browser</span>
+    </div>
+    <div class="icon" onclick="openApp('credits')">
+      <img src="icons/credits.png" alt="Credits" />
+      <span>Credits</span>
+    </div>
+    <div class="icon" onclick="openApp('games')">
+      <img src="icons/games.png" alt="Games" />
+      <span>Games</span>
+    </div>
+  </div>
+
+  <!-- Taskbar -->
+  <div id="taskbar">
+    <div id="start-button">
+      <img src="images/elusion-logo-bg.jpeg" alt="Start" style="width:40px; height:40px;" />
+    </div>
+    <div id="taskbar-apps"></div>
+    <div id="system-tray">
+      <span id="time"></span>
+    </div>
+  </div>
+
+  <!-- Start Menu -->
+  <div id="start-menu" class="hidden">
+    <div class="start-header">XLITE</div>
+    <div class="start-apps">
+      <button onclick="openApp('explorer')">📂 File Explorer</button>
+      <button onclick="openApp('settings')">⚙️ Settings</button>
+      <button onclick="openApp('notepad')">📝 Notepad</button>
+      <button onclick="openApp('browser')">🌐 Browser</button>
+    </div>
+  </div>
+
+  <!-- Container for app windows -->
+  <div id="windows-container"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>

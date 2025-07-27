@@ -1,0 +1,44 @@
+<h2>🎮 XLITE Games Hub</h2>
+<p>Thank you for using XLITE for all of your unblocking needs.</p>
+
+<div class="game-buttons">
+  <button onclick="loadGame('games/slope.html')">Slope</button>
+  <button onclick="loadGame('games/ovo.html')">OvO</button>
+  <button onclick="loadGame('games/geometrydash.html')">Geometry Dash</button>
+  <button onclick="loadGame('games/cookie-clicker.html')">Cookie Clicker</button>
+  <button onclick="loadGame('games/wordle.html')">Wordle</button>
+  <button onclick="loadGame('games/chromedino.html')">Chrome Dino</button>
+  <button onclick="loadGame('games/tomb-of-the-mask.html')">Tomb of the Mask</button>
+  <button onclick="loadGame('games/timeshooter2.html')">Time Shooter 2</button>
+</div>
+
+<div id="game-frame-container" style="margin-top: 15px; width: 100%; height: 400px;">
+  <!-- Game iframe will be injected here -->
+</div>
+
+<script>
+function loadGame(url) {
+  const container = document.getElementById('game-frame-container');
+  container.innerHTML = `
+    <iframe src="${url}" style="width:100%; height:100%; border:none;"></iframe>
+  `;
+}
+</script>
+
+<style>
+  h2 {
+    margin-bottom: 10px;
+  }
+  .game-buttons button {
+    margin: 5px;
+    padding: 8px 12px;
+    background: #223;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  .game-buttons button:hover {
+    background: #335;
+  }
+</style>
